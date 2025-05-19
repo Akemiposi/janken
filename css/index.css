@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Kiwi+Maru&family=Noto+Sans+JP:wght@100..900&family=Tagesschrift&family=Yomogi&family=Zen+Maru+Gothic:wght@400;700&display=swap');
+html {
+    background-color: skyblue; /* 画面全体にスカイブルー */
+    padding: 30px; /* 枠の太さ */
+    box-sizing: border-box;
+    height: 100%;
+  }
+ 
+ main  {
+    margin: 0;
+    padding: 20px 0;
+    background-color: #fbecc4; /* 薄いクリーム色 */
+    background-image: radial-gradient(#faf3de 5px, transparent 6px);
+    background-size: 30px 30px; /* ドットの間隔 */
+    height: 100%;
+    box-sizing: border-box;
+    min-height: calc(100vh - 60px); /* 枠の合計を引く */
+    font-family: "Hiragino Maru Gothic ProN", "Rounded Mplus 1c", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  h1 {
+    font-size: clamp(2rem, 6vw, 5.5rem);
+    text-align: center;
+    margin: 10px auto;
+    font-weight: bold;
+    display: inline-block;
+    font-family: "Kiwi Maru", serif;
+    font-weight: 900;
+     font-style: normal;
+     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+
+  }
+ .title_box{
+  text-align: center;
+ }
+.title_img{
+    display: flex;
+    justify-content: center;
+}
+.title_img img{
+    width: 60%;
+    height: auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+.btn1 button {
+    background-color: #ff8fa3; 
+    border: none;
+    border-radius: 50px; /* 丸み */
+    padding: 25px 40px;
+    font-size: 1.5rem;
+    font-family: 'Kosugi Maru', sans-serif;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn1 button:hover {
+    background-color: #f65875;
+    transform: scale(1.50);
+  }
+  
+/* ----janken_rich.html----- */
+
+
+.play_area {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 5vw;
+  flex-wrap: nowrap;
+}
+.boy_wrap,
+.pc_wrap{
+  display: flex;
+ justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 38vw;
+  max-width: 400px;
+  min-width: 300px;
+  position: relative;
+}
+
+#boy_img, 
+#girl_img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.name{
+  font-size: 3.2rem;
+  left: 50%;
+  font-size: 2rem;
+  font-family: "Kiwi Maru", serif;
+}
+
+
+.judgement_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#judgement {
+  text-align:center;
+  align-items: baseline;
+}
+.result{
+  font-size: 5vw;
+  font-family: "Kiwi Maru", serif;
+  font-weight: 900;
+  text-align: center;
+   font-style: normal;
+   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+.pon {
+  font-size: 5vw;
+  vertical-align: sub;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.5rem;
+}
+.call {
+  text-align: center;
+  margin: 1rem 0 0.5rem;
+}
+
+#boy_hand_img,
+#girl_hand_img {
+  position: absolute;
+  top: 36%; /* 白丸の中央に合わせて微調整 */
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 35%; /* 白丸内にしっかり収めるサイズ感 */
+  max-width: 125px;
+  height: auto;
+  pointer-events: none;
+  display: none;
+}
+
+.btn_area {
+  display: flex;
+  justify-content: center;
+  gap: 20px;        /* ご希望通りの間隔 */   /* 画面の左半分 */
+  margin-left: 0;   /* 左寄せ */
+  margin-right: auto;
+}
+
+.janken_btn {
+  width: 70px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.janken_btn:hover {
+  transform: scale(1.3);
+}
+.hands_text{
+  display: flex;
+  margin-top: 30px;
+  gap: 30vw;
+  font-size: 2rem;
+  font-family: "Kiwi Maru", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+.return span{
+text-align: right;
+font-family: "Kiwi Maru", serif;
+  font-weight: 900;
+  font-style: normal;
+}
